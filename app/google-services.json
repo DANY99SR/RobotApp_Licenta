@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "125859235732",
+    "project_id": "roboapp-5341c",
+    "storage_bucket": "roboapp-5341c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125859235732:android:30618b1f2a241c633c3181",
+        "android_client_info": {
+          "package_name": "com.example.robotapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125859235732-3dqetmttv5cokn6oc560urvh80orvi96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6uq1arD6z4dVXAWYGG97y-H2oShGFS14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125859235732-3dqetmttv5cokn6oc560urvh80orvi96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DisinfectionFragment">
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:layout_marginBottom="180dp"
+        android:id="@+id/arc_progress_dis_temp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="60dp"
+        app:arc_text_size="50dp"
+        app:arc_suffix_text="C"
+        app:arc_text_color="#de931b"
+        app:arc_suffix_text_padding="5dp"
+        app:arc_suffix_text_size="25dp"
+        app:arc_bottom_text="Temp"
+        app:arc_bottom_text_size="15sp"
+        app:arc_stroke_width="15dp"
+        app:arc_unfinished_color="@color/gray"
+        app:arc_finished_color="#de931b"
+        android:backgroundTint="@color/background"
+        />
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+
+        app:layout_constraintTop_toBottomOf="@+id/arc_progress_dis_temp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/arc_progress_dis_hum"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:arc_progress="55"
+        app:arc_text_size="50dp"
+        app:arc_suffix_text="%"
+        android:layout_marginTop="30dp"
+        app:arc_suffix_text_padding="5dp"
+        app:arc_suffix_text_size="25dp"
+        app:arc_bottom_text="Humidity"
+        app:arc_bottom_text_size="15sp"
+        app:arc_stroke_width="15dp"
+        app:arc_unfinished_color="@color/gray"
+        app:arc_finished_color="#214193"
+        android:backgroundTint="@color/background"
+        />
+
+    <TextView
+        android:id="@+id/disinfection_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/arc_progress_dis_hum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:text="The quality of disinfection is related to the temperature and humidity in the room.  \n
+For a more effective disinfection using UV LEDs, the temperature must be between 15 and 25 degrees Celsius and the humidity must not exceed 60%."
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

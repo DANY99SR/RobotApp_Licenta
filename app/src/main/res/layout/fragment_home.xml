@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+   <ImageView
+       android:id="@+id/image_home"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:layout_marginTop="50dp"
+       android:src="@drawable/roboticon"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/hello_username"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/image_home"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginTop="60dp"
+       android:textColor="@color/gray"
+       android:text="Hello Daniel"
+       android:textAllCaps="false"
+       android:textSize="30dp"
+       >
+   </TextView>
+
+   <TextView
+       android:id="@+id/battery"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@+id/hello_username"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginTop="60dp"
+       android:textSize="30sp"
+       android:text="Battery"
+       android:textAllCaps="false"
+       android:textColor="@color/gray"
+
+       />
+
+   <com.progress.progressview.ProgressView
+       android:layout_marginTop="45dp"
+       android:id="@+id/progressView_battery"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="60dp"
+       android:layout_gravity="center_horizontal"
+       app:pvDirection="fromLeft"
+       app:pvShape="arc"
+       app:pvBackgroundColor="@color/gray"
+       app:pvProgressColor="@color/gray"
+       app:pvProgress="0.3"
+       app:pvAnimateDuration="1500"
+       app:pvProgressWidth="20dp"
+       app:layout_constraintTop_toBottomOf="@+id/battery"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+
+       />
+
+
+
+   <TextView
+       android:id="@+id/percent_battery"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@+id/progressView_battery"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginBottom="170dp"
+       android:text="30"
+       android:textSize="30sp"
+       android:textColor="@color/gray"
+       />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

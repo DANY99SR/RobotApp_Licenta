@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_customer_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_reset" />
+
+    <EditText
+        android:id="@+id/email_reset"
+        app:layout_constraintTop_toBottomOf="@id/text_customer_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="80dp"
+        android:textColorHighlight="@color/gray"
+        android:hint="Email"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_reset"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Reset"
+        android:textColor="@color/gray"
+        android:textAllCaps="false"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/button_shape1"
+        app:layout_constraintTop_toBottomOf="@id/email_reset" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

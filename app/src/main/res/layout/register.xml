@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_customer_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="25dp"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_register" />
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="20dp"
+        android:textColorHighlight="@color/gray"
+        android:hint="Email"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_customer_register" />
+
+    <EditText
+        android:id="@+id/username_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:hint="Username"
+        android:paddingStart="10dp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textSize="15dp"
+        android:backgroundTint="@color/gray"
+        android:textColorHighlight="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/email_register" />
+
+    <EditText
+        android:id="@+id/fullname_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:layout_marginRight="60dp"
+        android:hint="FullName"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textColorHighlight="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/username_register" />
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:hint="Password"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:textColorHighlight="@color/gray"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/fullname_register" />
+
+    <EditText
+        android:id="@+id/robot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:paddingStart="10dp"
+        android:hint="Robot Password"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textSize="15dp"
+        android:textColorHighlight="@color/gray"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/password_register" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Register"
+        android:textColor="@color/gray"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/button_shape1"
+        app:layout_constraintTop_toBottomOf="@id/robot_password" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/log_in_already"
+      app:layout_constraintTop_toBottomOf="@+id/button_register"
+      android:text="Already have an account? \n Please Log In "
+      android:gravity="center"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      android:layout_marginTop="20dp"
+      android:textColor="@color/gray"
+
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

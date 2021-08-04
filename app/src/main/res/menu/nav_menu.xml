@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_temperature"
+        android:icon="@drawable/temperature"
+        android:title="Temperature" />
+
+    <item
+        android:id="@+id/nav_humidity"
+        android:icon="@drawable/humidity"
+        android:title="Humidity" />
+    <item
+        android:id="@+id/nav_air_quality"
+        android:icon="@drawable/airquality"
+        android:title="Air Quality" />
+    <item
+        android:icon="@drawable/dezinfectation_quality"
+        android:id="@+id/nav_disinfection_quality"
+        android:title="Disinfection  Quality" />
+    <item
+        android:id="@+id/nav_bluetooth"
+        android:icon="@drawable/ic_baseline_bluetooth_24"
+        android:title="Bluetooth"
+        />
+
+    <item
+        android:title="Log out"
+        android:icon="@drawable/ic_baseline_lock_24"
+        android:id="@+id/nav_log_out"
+
+        />
+</menu>
